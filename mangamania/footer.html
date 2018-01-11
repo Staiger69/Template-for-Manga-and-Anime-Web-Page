@@ -1,0 +1,68 @@
+</main>
+  <footer class="blue-bg color-white">
+ <p><?php echo $sitedescription; ?></p>
+    <ul>
+      <li><a href="#top" onmousedown="sound.play()" class="scroll" data-speed="800">Top</a></li>
+      <!-- date script -->
+      <li><?php echo 'Updated ' . date('F j, Y',filemtime($_SERVER['SCRIPT_FILENAME'])) ?></li> 
+      <br> </br>
+      <!-- copyright statement -->
+      <li>&copy; 2017-<?php echo date('Y').' '.$author; ?></li> 
+    </ul>
+    
+    <nav id="share">
+      <i class="material-icons">share</i>
+
+      <!-- Twitter -->
+      <a href="http://twitter.com/share?url=http://people.oregonstate.edu/~guzmannt/mangamania/index.php" target="_blank" class="circle"> 
+      <i class="socicon-twitter"></i></a>
+  
+      <!-- Facebook -->
+      <a href="http://www.facebook.com/sharer.php?u=http://people.oregonstate.edu/~guzmannt/mangamania/index.php" target="_blank" class="circle"> 
+      <i class="socicon-facebook"></i></a>
+      
+      <!-- Googgle + -->
+      <a href="https://plus.google.com/share?url=http://people.oregonstate.edu/~guzmannt/mangamania/index.php" target="_blank"> 
+       <i class="socicon-googleplus"></i></a>
+      
+      <!-- Pinterest -->
+      <a href="https://pinterest.com/pin/create/bookmarklet/?media=[post-img]&url=[http://people.oregonstate.edu/~guzmannt/mangamania/index.php/]&is_video=[is_video]&description=[post-title]" target="_blank">
+        <i class="socicon-pinterest"></i></a>
+
+        
+      </a>
+    </nav>
+
+  </footer>
+
+    <!-- scripts-->
+    <script src="smoothscroll.js"></script>
+    <script>
+    function myFunction() {
+        // Declare variables
+        var input, filter, ul, li, a, i;
+        input = document.getElementById('myInput');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName('li');
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>    
+    <script src="jquery.captionate.js"></script>    
+    <script>
+        $(window).load(function(){  
+           $('img.caption').captionate();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<!-- IE conditional statements -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<html lang="en">
+<head>
+   <meta charset="utf-8" /> 
+   <?php 
+      $sitename="MangaMania"; 
+      $sitedescription="This website helps users to find anime and manga.";
+      $slogan="Never miss a chapter with MangaMania";
+      $sitepath="http://people.oregonstate.edu/~guzmannt/mangamania/";
+      $author="Teresita C. G. Nader";
+   ?>
+  <!-- title tag -->
+  <title><?php echo $pagetitle." , ".$sitename; ?></title>
+  
+  <!-- meta tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="slogan" content="<?php echo $slogan; ?>" />
+  <meta name="description" content="<?php echo $sitedescription; ?>" />
+  <meta name="author" content="<?php echo $author; ?>" />
+  <meta name="keywords" content="Teresita Guzman Nader, read manga online, anime online, manga online, anime list, keep track of your animes, Manga list, Popular Mangas, Keep your mangas in a list, Find new manga chapters, Find manga, Manga database" />
+  <meta name="robots" content="noindex, nofollow, noarchive" /> 
+
+   <!-- stylesheets -->
+   <link rel="stylesheet" href="<?php echo $sitepath;?>main.css" />
+   <link href="<?php echo $sitepath;?>carousel.css" rel="stylesheet" />
+   <link href="https://necolas.github.io/normalize.css/3.0.3/normalize.css" type="text/css" rel="stylesheet" />
+   <!-- fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Kurale|Roboto+Slab" rel="stylesheet">
+   <!-- favicons -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+   <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8" />
+   <!-- Symbol copyright Teresita C. G. Nader -->
+   <link rel="apple-touch-icon" sizes="114x114" href="../apple-touch-icon.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+   <link rel="manifest" href="../manifest.json">
+   <link rel="manifest" href="manifest.json">
+   <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+   <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="theme-color" content="#ffffff">
+   <!-- scripts -->
+   <script src="modernizr-dev-min.js"></script>
+</head>
+
+<body>
+<article  id="top" class="blue-bg color-white">  
+  <header>
+     <a href="<?php echo $sitepath; ?>">
+        <img 
+           src="<?php echo $sitepath; ?>img/logo.png"   
+           alt="<?php echo $sitename; ?>" 
+           title="&copy; 2017 Teresita C. G. Nader" 
+
+        />
+     </a>
+      <p><?php echo $slogan; ?></p>
+  </header>
+
+  <nav id="articles" class="deep-blue-bg">
+    <ul>
+       <li><a href="<?php echo $sitepath; ?>index.php"><i class="material-icons md-24">home</i> Home</a></li>
+       <li><a href="<?php echo $sitepath; ?>manga/index.php"><i class="material-icons md-24">chrome_reader_mode</i> Manga</a></li>
+       <li><a href="<?php echo $sitepath; ?>anime/index.php"><i class="material-icons md-24">live_tv</i> Anime</a></li>
+       <li><a href="<?php echo $sitepath; ?>contactus/index.php"><i class="material-icons md-24">mail</i> Contact Us</a></li>
+    </ul>
+  </nav>
+</article>
+<main>
+<article><!-- This article closes in each of the content PHP pages. -->
+<h1><?php echo $pagetitle; ?></h1>

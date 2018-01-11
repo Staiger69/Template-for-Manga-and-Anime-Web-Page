@@ -1,0 +1,283 @@
+/* Color Scheme */
+/* ===================================================================
+https://color.adobe.com/pvl-gem-rock-shell-garden-color-theme-10168214/
+===================================================================
+*/
+
+/*==================================== MOBILE styles =============================*/
+html {
+}
+body {
+  font-family: 'Kurale', serif, 'Roboto+Slab', serif;
+  background-image: url(background/graffiti-on-walls-in-cyprus-blur-320px.jpg);
+  background-repeat:no-repeat; /* Display background graphic only once */
+  background-size: cover; /* Cover the entire body with one large photo */
+  background-attachment: fixed; /* Is fixed while the visitor scrolls */  
+  background-position: top left;
+  font-weight: 500px;
+}
+header {
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px;
+  position: relative;
+  color: black;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+header a img {border:0;}
+#symbol {height:100px; width:auto;}
+header a:hover {background-color:transparent;}
+/* colors */
+.blue-bg {
+    background-color: #50ABD7;
+    background-color: rgba(80,171,215);
+}
+.deep-blue-bg {
+    background-color: #001E59;
+    background-color: rgba(0,30,89);
+}
+.light-blue-bg {
+    background-color: #C3E1FF;
+    background-color: rgba(195,225,225);
+}
+.light-pink-bg {
+    background-color: #E2C19F;
+    background-color: rgba(226,193,159);
+}
+.dark-pink-bg {
+    background-color: #8F1B2D;
+    background-color: rgba(143,27,45);
+}
+.color-blue {
+  color: #50ABD7;
+}
+.color-deep-blue {
+  color: #001E59;
+}
+.color-light-pink {
+  color: #E2C19F;
+}
+.color-dark-pink {
+  color: #8F1B2D;
+}
+.color-black {
+  color: #000000;
+}
+.color-white {
+  color: #ffffff;
+}
+.white-bg {
+  background-color: #ffffff;
+  text-align:center;
+  margin: 160px;
+  padding: 30px;
+}
+
+/* anchors */
+/* navigation */
+nav {margin: 0 auto; padding: 0px; border: 1px; position: relative;display: block;}
+nav ul {padding: 0; display: block; list-style-type: disc; overflow: initial;}
+nav li {padding: 5px; display: inline-block; list-style-type: none; background-color: #001E59; border: 2px solid #001E59; margin: 5px 0px;}
+nav li:hover {background-color: #C3E1FF;}
+nav a {color: white; text-decoration: none; padding: 2px; width: 100px;}
+#myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+/* page layout blocks */
+#share a {
+    display:inline;
+    background-color: #C3E1FF; 
+    padding: 1.5%;
+    margin: 0;
+    text-align: center;
+    line-height: 1;
+    vertical-align: middle;
+    -webkit-border-radius: 200px;/*Safari, Chrome*/
+    -moz-border-radius: 200px;/*Firefox*/
+    border-radius: 200px;
+}
+#share a:hover {
+    background-color:#000000;
+    background-color: rgba(0,0,0,0.95);
+}
+.socicon-facebook {color: #3e5b98;}
+.socicon-twitter {color: #4da7de;}
+.socicon-googleplus {color: #dd4b39;}
+.socicon-pinterest {color:#c92619;}
+.material-icons.md-18 {font-size: 18px;}
+.material-icons.md-24 {font-size: 24px;}
+.material-icons.md-36 {font-size: 36px;}
+.material-icons.md-48 {font-size: 48px;}
+.material-icons.black {color:black;}
+/* typography */
+/* tables */
+
+table {
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th {
+    cursor: pointer;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+/* form */
+form {
+    height: 800px;
+    width: 600px;
+}
+fieldset {
+    width: 35%;
+    float: left;
+    position:relative;
+    margin-top:5%;
+    margin-left:8%;
+}
+legend {
+  position:absolute;
+  left:10px; 
+  top:-20px;
+  white-space:nowrap;
+  margin-bottom:15px;
+  }
+label {
+  display:block;
+  margin-top:5%;
+}
+input {
+  padding:2%;
+}
+textarea {
+  height:100px;
+  padding:2%;
+  width:95%; 
+}
+select {
+  font-family:'Roboto Slab', serif;}
+option {}
+label input[type="checkbox"], 
+label input[type="radio"] {
+  display:inline!important; 
+  }
+input:focus, 
+textarea:focus {
+    background-color:#C3E1FF; 
+    outline:white;
+    border:2px solid white;
+}
+input:required,textarea:required,select:required {
+    border:2px solid green; 
+}
+label.required:after {content:" *";}
+/* media */
+/* embellishments */
+h1 {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=12, Direction=135, Color=#000000)";/*IE 8*/
+    text-shadow: 2px 2px 12px #000000;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=12, Direction=135, Color=#000000); /*IE 5.5-7*/
+}
+.trans {
+  background-color: #C3E1FF;
+  background-color: rgb(195, 225, 255);
+  background-color: rgba(195, 225, 255, 0.6);}
+.boxshadow {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color=#000000)";/*IE 8*/
+  -moz-box-shadow: 1px 1px 10px 11px rgba(0,0,0,0.6);/*FF 3.5+*/
+  -webkit-box-shadow: 1px 1px 10px 11px rgba(0,0,0,0.6);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+  box-shadow: 1px 1px 10px 11px rgba(0,0,0,0.6);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color=#000000); /*IE 5.5-7*/
+}
+footer {
+  margin: 0 auto;
+  padding: 50px;
+  border: 1px;
+  position: relative;
+}
+footer ul {padding: 0;}
+footer li {
+  display: inline-block;
+  margin 0px;
+  text-align: left;
+}
+.confirmation {
+  background-color:white;
+  border:2px solid green;
+  color:green;
+  font-size:120%;
+  font-weight:bold;
+  max-width:300px;
+  padding:3%;
+  
+  position:absolute;
+  top:10%;
+  left:20%
+  }
+.tryagain {
+  background-color:white;
+  border:2px solid red;
+  color:red;
+  font-size:120%;
+  font-weight:bold;
+  max-width:300px;
+  padding:3%;
+  
+  position:absolute;
+  top:10%;
+  left:20%
+  }
+/*==================================== TABLET media query changes =================*/
+@media all and (min-width: 600px) {
+  body {
+    background-image: url(background/graffiti-on-walls-in-cyprus-blur-640px.jpg);
+  }  
+  
+}
+
+/*==================================== DESKTOP  media query changes ===============*/
+@media all and (min-width: 1080px) {
+  body {
+    background-image: url(background/graffiti-on-walls-in-cyprus-blur-1080px.jpg);
+  }    
+  
+}
