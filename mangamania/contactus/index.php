@@ -12,7 +12,7 @@
         $web = $_POST['web'];
         $message = $_POST['message'];
         $from = $_POST['firstlastname']; 
-        $to = 'guzmannt@oregonstate.edu'; 
+        $to = 'email here'; 
         $subject = '[Resume;] inquiry';
         $human = $_POST['human'];
         /* extra credit */
